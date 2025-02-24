@@ -1,9 +1,16 @@
-Merhaba, yeni başlayanlar için Linux tabanlı sistemlerde özellikle raspberry pi üzerinde hiçbir blog sayfasında vpn'e bağlanma uygulaması göremedim. Genellikle RPI donanımını bir openvpn sunucusuna çevirdiklerinin uygulamaları var. Bu sebeple siz yeni başlayanlar için Cihaza VPN bağlantısı yapmayı göstereceğim.
-SEBEP: Geliştirdiğimiz uygulamala ve API scriptlerinin bazıları Türk DNS ve DPI servislerinden geçtiği için uygulamalar ERROR CODE:500 gibi geri bildirimlerde bulunur. Güncel örnek vermek gerekirse Discord platformunda bir bot yazmak ve bunu kendi ağ'ınız içinde çalıştırmak isterseniz. Bunu başaramazsınız.
+Merhaba, yeni başlayanlar için Linux tabanlı sistemlerde özellikle raspberry pi üzerinde hiçbir blog sayfasında vpn'e bağlanma uygulaması göremedim.
+Genellikle RPI donanımını bir openvpn sunucusuna çevirdiklerinin uygulamaları var. Bu sebeple siz yeni başlayanlar için Cihaza VPN bağlantısı yapmayı göstereceğim.
 
-Öncelikle openvpn clientini indirmemiz gerekir. Debian ve Ubuntu çekirdekleri için apt get install openvpn komutu ile openvpn clientini indiriyorum. Bana ücretsiz bir VPN sağlayıcısı gerekli. Bunu www.freeopenvpn.org üzerinden alacağım. Anasayfadaki ülkelerden birini seçip "Get access" sayfasına giriyorum. "Download TCP" buttonu ile indiriyorum.
 
-OpenVPN uygulaması yüklendidiğini varsayıyorum. LXTerminal üzerinde dosyanın indirildiği konuma gidip openvpn --config <dosyaadı>.ovpn şeklindeki  parametre ile çalıştırıyorum. Username ve Password web sitesindeki Dowsload buttonu altında mevcuttur.
+SEBEP: Geliştirdiğimiz uygulamala ve API scriptlerinin bazıları Türk DNS ve DPI servislerinden geçtiği için uygulamalar ERROR CODE:500 gibi geri bildirimlerde bulunur. 
+Güncel örnek vermek gerekirse Discord platformunda bir bot yazmak ve bunu kendi ağ'ınız içinde çalıştırmak isterseniz. Bunu başaramazsınız.
+
+Öncelikle openvpn clientini indirmemiz gerekir. Debian ve Ubuntu çekirdekleri için apt get install openvpn komutu ile openvpn clientini indiriyorum.
+Bana ücretsiz bir VPN sağlayıcısı gerekli. Bunu www.freeopenvpn.org üzerinden alacağım. Anasayfadaki ülkelerden birini seçip "Get access" sayfasına giriyorum.
+"Download TCP" buttonu ile indiriyorum.
+
+OpenVPN uygulaması yüklendidiğini varsayıyorum. LXTerminal üzerinde dosyanın indirildiği konuma gidip openvpn --config <dosyaadı>.ovpn şeklindeki  parametre ile çalıştırıyorum.
+Username ve Password web sitesindeki Dowsload buttonu altında mevcuttur.
 
 İşlemler başarılı olduğunda konsolda " Initialization Sequence Completed" şeklinde bir yanıt görürsünüz. Kontorl için ipinfo.io websitesine girip ip adresini kontrol edebilirsiniz.
 
